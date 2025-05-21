@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
-    --green:#27ae60;
+    --green:#008000;
 }
 
 *{
@@ -64,7 +64,43 @@ section{
     font-size: 1.7rem;
     cursor: pointer;
 }
+}
 
+.contact .row .contact-info {
+    flex: 1 1 40rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact .row .contact-info .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contact .row .contact-info .contact-item i {
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.contact .row .contact-info .contact-item p {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.contact .row .contact-info .social-icons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contact .row .contact-info .social-icons a {
+    font-size: 3rem;
+    color: #333;
+}
+#ff5712
 .btn:hover{
     background:var(--green);
     letter-spacing: .2rem;
@@ -284,10 +320,11 @@ header .navbar a:hover{
     width:100%;
     position: absolute;
     top:0; left:-100%;
-    background:#fff9;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 2rem; /* Add some padding */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; /* Stack title and description vertically */
+    justify-content: center; /* Center content vertically */
 }
 
 .portfolio .box-container .box:hover .content{
@@ -295,6 +332,20 @@ header .navbar a:hover{
 }
 
 .blogs .box-container{
+    .portfolio .box-container .box .content h3 {
+        font-size: 2.5rem;
+        color: #222;
+        margin-bottom: 1rem; /* Add space between title and description */
+        text-align: center;
+    }
+
+    .portfolio .box-container .box .content p {
+        font-size: 1.6rem;
+        color: #333;
+        line-height: 1.6;
+        text-align: center;
+    }
+
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
